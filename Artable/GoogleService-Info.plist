@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>644953350198-02h1kh5atelr4p65sivkrgdse4nfi4d4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.644953350198-02h1kh5atelr4p65sivkrgdse4nfi4d4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCrIIVZlO3nmiW_BLiD_8zQQbnpYh6Xjp4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>644953350198</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>co.zw.lunchbox.Artable</string>
+	<key>PROJECT_ID</key>
+	<string>airtable-7e02f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>airtable-7e02f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:644953350198:ios:4909678e83dbdeb5def897</string>
+	<key>DATABASE_URL</key>
+	<string>https://airtable-7e02f.firebaseio.com</string>
+</dict>
+</plist>
