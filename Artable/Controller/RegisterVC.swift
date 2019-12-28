@@ -22,7 +22,12 @@ class RegisterVC: UIViewController {
     
     @IBOutlet weak var confirmPasswordTxt: UITextField!
     
+    @IBOutlet weak var passCheckImg: UIImageView!
+    @IBOutlet weak var confirmPassCheckImg: UIImageView!
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,18 +36,20 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func registerClicked(_ sender: Any) {
-        guard let email = emailTxt.text, !email.isEmpty,
-            let username = usernameTxt.text,!username.isEmpty,
-            let password = passwordTxt.text, !username.isEmpty else { return }
+        guard let email = emailTxt.text, email.isNotEmpty,
+            let username = usernameTxt.text,username.isNotEmpty,
+            let password = passwordTxt.text, username.isNotEmpty else { return }
+        
+        activityIndicator.startAnimating()
             
             
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-          // ...
             
             if let error = error {
                 debugPrint(error)
                 return
             }
+            self.activityIndicator.stopAnimating()
             
             print("Successfully Registered")
         }
