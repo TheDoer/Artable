@@ -32,7 +32,41 @@ class RegisterVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        passwordTxt.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
+        confirmPasswordTxt.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
   
+    }
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        
+        guard let passTxt = passwordTxt.text else { return }
+        
+        
+        //The moment we start typing on confirm password that's when the red check images comes in
+        
+        if textField == confirmPasswordTxt{
+            passCheckImg.isHidden = false
+            confirmPassCheckImg.isHidden = false
+        } else {
+            if passTxt.isEmpty {
+                passCheckImg.isHidden = true
+                confirmPassCheckImg.isHidden = true
+                confirmPasswordTxt.text = ""
+            }
+        }
+        
+        //Make it so when the password match the check image turn green
+        
+        if passwordTxt.text == confirmPasswordTxt.text {
+            passCheckImg.image = UIImage(named: "green_check")
+            confirmPassCheckImg.image = UIImage(named: "green_check")
+        }
+        else {
+            passCheckImg.image = UIImage(named: "red_check")
+            confirmPassCheckImg.image = UIImage(named: "red_check")
+        }
+        
     }
     
     @IBAction func registerClicked(_ sender: Any) {
