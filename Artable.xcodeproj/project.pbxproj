@@ -15,6 +15,7 @@
 		F170798723B67EC50006496B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170798623B67EC50006496B /* RegisterVC.swift */; };
 		F1C31AB623B7365D00EB0B83 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31AB523B7365D00EB0B83 /* Extension.swift */; };
 		F1C31AB823B7544200EB0B83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31AB723B7544200EB0B83 /* Constants.swift */; };
+		F1C31ABB23B75D1400EB0B83 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31ABA23B75D1400EB0B83 /* RoundedViews.swift */; };
 		F1C401D223B2F83C0083F2CF /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1C401D123B2F83C0083F2CF /* LoginStoryboard.storyboard */; };
 		F1F1DE0B239677DA0035BB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1DE0A239677DA0035BB68 /* AppDelegate.swift */; };
 		F1F1DE0D239677DA0035BB68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1DE0C239677DA0035BB68 /* SceneDelegate.swift */; };
@@ -41,6 +42,7 @@
 		F170798623B67EC50006496B /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		F1C31AB523B7365D00EB0B83 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F1C31AB723B7544200EB0B83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F1C31ABA23B75D1400EB0B83 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		F1C401D123B2F83C0083F2CF /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		F1F1DE07239677DA0035BB68 /* Artable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F1DE0A239677DA0035BB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F1C31AB923B75CF500EB0B83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1C31ABA23B75D1400EB0B83 /* RoundedViews.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F1F1DDFE239677D90035BB68 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +206,7 @@
 		F1F1DE36239698D50035BB68 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F1C31AB923B75CF500EB0B83 /* View */,
 				F1C31AB423B7364500EB0B83 /* Utils */,
 				F1F1DE13239677DB0035BB68 /* Assets.xcassets */,
 			);
@@ -435,6 +446,7 @@
 				F1F1DE0B239677DA0035BB68 /* AppDelegate.swift in Sources */,
 				F170798523B67EAB0006496B /* LoginVC.swift in Sources */,
 				F1C31AB623B7365D00EB0B83 /* Extension.swift in Sources */,
+				F1C31ABB23B75D1400EB0B83 /* RoundedViews.swift in Sources */,
 				F1C31AB823B7544200EB0B83 /* Constants.swift in Sources */,
 				F1F1DE0D239677DA0035BB68 /* SceneDelegate.swift in Sources */,
 				F170798723B67EC50006496B /* RegisterVC.swift in Sources */,
