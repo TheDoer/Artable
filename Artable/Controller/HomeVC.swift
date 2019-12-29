@@ -18,6 +18,18 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //if the current user is not logged in, firebase with anonymously sign in
+        if Auth.auth().currentUser == nil {
+            Auth.auth().signInAnonymously { (result, error) in
+                
+                if let error = error {
+                    debugPrint(error)
+                }
+                
+                
+            }
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
