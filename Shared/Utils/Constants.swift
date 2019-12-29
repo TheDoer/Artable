@@ -21,6 +21,8 @@ struct AppImages {
     static let RedCheck = "red_check"
 }
 
+//Research on Color Literals for these colors to work
+
 //struct AppColors {
 //    static let Blue = #colorLiteral(red: 0.2914361954, green: 0.3395442367, blue: 0.4364506006, alpha: 0.8470588235)
 //    static let Red = #colorLiteral(red: 0.8352941176, green: 0.3921568627, blue: 0.3137254902, alpha: 1)

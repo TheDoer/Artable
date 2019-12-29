@@ -75,12 +75,21 @@ class RegisterVC: UIViewController {
             let password = passwordTxt.text, username.isNotEmpty else { return }
         
         activityIndicator.startAnimating()
-            
-            
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            
-            if let error = error {
+        
+        guard let authUser = Auth.auth().currentUser else {
+            return
+        }
+        
+        //create a credentials
+        
+        let credentials = EmailAuthProvider.credential(withEmail: email, password: password)
+        
+        //If there is a user
+        
+        authUser.linkAndRetrieveData(with: credentials) { (result, error) in
+          if let error = error {
                 debugPrint(error)
+            self.handleFireAuthError(error: error)
                 return
             }
             
