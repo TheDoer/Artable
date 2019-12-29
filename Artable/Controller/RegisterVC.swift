@@ -78,7 +78,7 @@ class RegisterVC: UIViewController {
             
         }
         
-        guard let confirmPass = confirmPasswordTxt.text, confirmPass == confirmPasswordTxt.text else {
+         guard let confirmPass = confirmPasswordTxt.text, confirmPass == passwordTxt.text else {
             simpleAlert(title: "Error", msg: "Passwords do not match")
             return
         }
