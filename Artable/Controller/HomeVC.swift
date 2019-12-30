@@ -36,7 +36,7 @@ class HomeVC: UIViewController {
         
         //We are logged in
         if let user = Auth.auth().currentUser, !user.isAnonymous {
-            loginOutBtn.title = "Logout"
+            loginOutBtn.title = "Adonis"
         } else {
             loginOutBtn.title = "Login"
         }

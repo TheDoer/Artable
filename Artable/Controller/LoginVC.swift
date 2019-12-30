@@ -23,6 +23,13 @@ class LoginVC: UIViewController {
     
 
     @IBAction func forgotPassClicked(_ sender: Any) {
+        
+        let vc = ForgotPasswordVC()
+        vc.modalTransitionStyle = .crossDissolve
+        vc.modalPresentationStyle = .overCurrentContext
+        present(vc, animated: true, completion: nil)
+        
+        
     }
     
 

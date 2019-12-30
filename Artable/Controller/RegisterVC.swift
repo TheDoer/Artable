@@ -82,7 +82,6 @@ class RegisterVC: UIViewController {
             simpleAlert(title: "Error", msg: "Passwords do not match")
             return
         }
-        
         activityIndicator.startAnimating()
         
         guard let authUser = Auth.auth().currentUser else {

@@ -13,6 +13,8 @@
 		F170797F23B6694B0006496B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F170797E23B6694B0006496B /* GoogleService-Info.plist */; };
 		F170798523B67EAB0006496B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170798423B67EAB0006496B /* LoginVC.swift */; };
 		F170798723B67EC50006496B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170798623B67EC50006496B /* RegisterVC.swift */; };
+		F1B7889023B9635B0096D503 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7888E23B9635B0096D503 /* ForgotPasswordVC.swift */; };
+		F1B7889123B9635B0096D503 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B7888F23B9635B0096D503 /* ForgotPasswordVC.xib */; };
 		F1C31AB623B7365D00EB0B83 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31AB523B7365D00EB0B83 /* Extension.swift */; };
 		F1C31AB823B7544200EB0B83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31AB723B7544200EB0B83 /* Constants.swift */; };
 		F1C31ABB23B75D1400EB0B83 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31ABA23B75D1400EB0B83 /* RoundedViews.swift */; };
@@ -40,6 +42,8 @@
 		F170797E23B6694B0006496B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F170798423B67EAB0006496B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F170798623B67EC50006496B /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		F1B7888E23B9635B0096D503 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		F1B7888F23B9635B0096D503 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
 		F1C31AB523B7365D00EB0B83 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F1C31AB723B7544200EB0B83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F1C31ABA23B75D1400EB0B83 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
@@ -137,6 +141,15 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		F1B7888D23B963380096D503 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F1B7888E23B9635B0096D503 /* ForgotPasswordVC.swift */,
+				F1B7888F23B9635B0096D503 /* ForgotPasswordVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		F1C31AB423B7364500EB0B83 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +191,7 @@
 		F1F1DE09239677DA0035BB68 /* Artable */ = {
 			isa = PBXGroup;
 			children = (
+				F1B7888D23B963380096D503 /* XIBs */,
 				F170798223B67E0A0006496B /* View */,
 				F170798123B67E010006496B /* Controller */,
 				F170798023B67DEB0006496B /* Model */,
@@ -300,6 +314,7 @@
 				F1F1DE14239677DB0035BB68 /* Assets.xcassets in Resources */,
 				F170797D23B666680006496B /* GoogleService-Info.plist in Resources */,
 				F1F1DE12239677DA0035BB68 /* Main.storyboard in Resources */,
+				F1B7889123B9635B0096D503 /* ForgotPasswordVC.xib in Resources */,
 				F1C401D223B2F83C0083F2CF /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +462,7 @@
 				F170798523B67EAB0006496B /* LoginVC.swift in Sources */,
 				F1C31AB623B7365D00EB0B83 /* Extension.swift in Sources */,
 				F1C31ABB23B75D1400EB0B83 /* RoundedViews.swift in Sources */,
+				F1B7889023B9635B0096D503 /* ForgotPasswordVC.swift in Sources */,
 				F1C31AB823B7544200EB0B83 /* Constants.swift in Sources */,
 				F1F1DE0D239677DA0035BB68 /* SceneDelegate.swift in Sources */,
 				F170798723B67EC50006496B /* RegisterVC.swift in Sources */,
