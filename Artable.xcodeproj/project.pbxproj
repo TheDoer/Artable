@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		82151592D8409BCF378485BA /* Pods_ArtableAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8661D5E0E41332897593717 /* Pods_ArtableAdmin.framework */; };
 		9837A14D72F9475FB1909704 /* Pods_Artable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C027D567BCE2C669E1D96 /* Pods_Artable.framework */; };
+		F15EA43523BB736F001173F5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15EA43423BB736F001173F5 /* Category.swift */; };
+		F15EA43623BB7470001173F5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15EA43423BB736F001173F5 /* Category.swift */; };
 		F170797D23B666680006496B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F170797C23B666680006496B /* GoogleService-Info.plist */; };
 		F170797F23B6694B0006496B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F170797E23B6694B0006496B /* GoogleService-Info.plist */; };
 		F170798523B67EAB0006496B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170798423B67EAB0006496B /* LoginVC.swift */; };
 		F170798723B67EC50006496B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170798623B67EC50006496B /* RegisterVC.swift */; };
+		F188E21823BB41F000726CCF /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188E21723BB41F000726CCF /* Firebase+Utils.swift */; };
+		F188E21923BB430400726CCF /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188E21723BB41F000726CCF /* Firebase+Utils.swift */; };
 		F1B7889023B9635B0096D503 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7888E23B9635B0096D503 /* ForgotPasswordVC.swift */; };
 		F1B7889123B9635B0096D503 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B7888F23B9635B0096D503 /* ForgotPasswordVC.xib */; };
 		F1C31AB623B7365D00EB0B83 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31AB523B7365D00EB0B83 /* Extension.swift */; };
@@ -38,10 +42,12 @@
 		B48113A537D7457CB146FD35 /* Pods-Artable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable.release.xcconfig"; path = "Pods/Target Support Files/Pods-Artable/Pods-Artable.release.xcconfig"; sourceTree = "<group>"; };
 		C8661D5E0E41332897593717 /* Pods_ArtableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08C027D567BCE2C669E1D96 /* Pods_Artable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15EA43423BB736F001173F5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F170797C23B666680006496B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F170797E23B6694B0006496B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F170798423B67EAB0006496B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F170798623B67EC50006496B /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		F188E21723BB41F000726CCF /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
 		F1B7888E23B9635B0096D503 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		F1B7888F23B9635B0096D503 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
 		F1C31AB523B7365D00EB0B83 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -109,6 +115,7 @@
 		F170798023B67DEB0006496B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F15EA43423BB736F001173F5 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,16 +162,17 @@
 			children = (
 				F1C31AB523B7365D00EB0B83 /* Extension.swift */,
 				F1C31AB723B7544200EB0B83 /* Constants.swift */,
+				F188E21723BB41F000726CCF /* Firebase+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		F1C31AB923B75CF500EB0B83 /* View */ = {
+		F1C31AB923B75CF500EB0B83 /* CustomViewDesigns */ = {
 			isa = PBXGroup;
 			children = (
 				F1C31ABA23B75D1400EB0B83 /* RoundedViews.swift */,
 			);
-			path = View;
+			path = CustomViewDesigns;
 			sourceTree = "<group>";
 		};
 		F1F1DDFE239677D90035BB68 = {
@@ -194,7 +202,6 @@
 				F1B7888D23B963380096D503 /* XIBs */,
 				F170798223B67E0A0006496B /* View */,
 				F170798123B67E010006496B /* Controller */,
-				F170798023B67DEB0006496B /* Model */,
 				F170798323B67E230006496B /* Storyboards */,
 				F1F1DE0C239677DA0035BB68 /* SceneDelegate.swift */,
 				F170797C23B666680006496B /* GoogleService-Info.plist */,
@@ -220,7 +227,8 @@
 		F1F1DE36239698D50035BB68 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F1C31AB923B75CF500EB0B83 /* View */,
+				F170798023B67DEB0006496B /* Model */,
+				F1C31AB923B75CF500EB0B83 /* CustomViewDesigns */,
 				F1C31AB423B7364500EB0B83 /* Utils */,
 				F1F1DE13239677DB0035BB68 /* Assets.xcassets */,
 			);
@@ -457,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F188E21823BB41F000726CCF /* Firebase+Utils.swift in Sources */,
 				F1F1DE0F239677DA0035BB68 /* HomeVC.swift in Sources */,
 				F1F1DE0B239677DA0035BB68 /* AppDelegate.swift in Sources */,
 				F170798523B67EAB0006496B /* LoginVC.swift in Sources */,
@@ -466,6 +475,7 @@
 				F1C31AB823B7544200EB0B83 /* Constants.swift in Sources */,
 				F1F1DE0D239677DA0035BB68 /* SceneDelegate.swift in Sources */,
 				F170798723B67EC50006496B /* RegisterVC.swift in Sources */,
+				F15EA43523BB736F001173F5 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +483,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F188E21923BB430400726CCF /* Firebase+Utils.swift in Sources */,
+				F15EA43623BB7470001173F5 /* Category.swift in Sources */,
 				F1F1DE292396985A0035BB68 /* ViewController.swift in Sources */,
 				F1F1DE252396985A0035BB68 /* AppDelegate.swift in Sources */,
 				F1F1DE272396985A0035BB68 /* SceneDelegate.swift in Sources */,
