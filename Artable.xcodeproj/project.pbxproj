@@ -11,6 +11,10 @@
 		9837A14D72F9475FB1909704 /* Pods_Artable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08C027D567BCE2C669E1D96 /* Pods_Artable.framework */; };
 		F15EA43523BB736F001173F5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15EA43423BB736F001173F5 /* Category.swift */; };
 		F15EA43623BB7470001173F5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15EA43423BB736F001173F5 /* Category.swift */; };
+		F15EA43923BB75FF001173F5 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15EA43723BB75FF001173F5 /* CategoryCell.swift */; };
+		F15EA43A23BB75FF001173F5 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15EA43723BB75FF001173F5 /* CategoryCell.swift */; };
+		F15EA43B23BB75FF001173F5 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15EA43823BB75FF001173F5 /* CategoryCell.xib */; };
+		F15EA43C23BB75FF001173F5 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15EA43823BB75FF001173F5 /* CategoryCell.xib */; };
 		F170797D23B666680006496B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F170797C23B666680006496B /* GoogleService-Info.plist */; };
 		F170797F23B6694B0006496B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F170797E23B6694B0006496B /* GoogleService-Info.plist */; };
 		F170798523B67EAB0006496B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170798423B67EAB0006496B /* LoginVC.swift */; };
@@ -43,6 +47,8 @@
 		C8661D5E0E41332897593717 /* Pods_ArtableAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtableAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08C027D567BCE2C669E1D96 /* Pods_Artable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15EA43423BB736F001173F5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F15EA43723BB75FF001173F5 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		F15EA43823BB75FF001173F5 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		F170797C23B666680006496B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F170797E23B6694B0006496B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F170798423B67EAB0006496B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -112,6 +118,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F15EA43D23BB7628001173F5 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F15EA43823BB75FF001173F5 /* CategoryCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		F170798023B67DEB0006496B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				F1C31ABA23B75D1400EB0B83 /* RoundedViews.swift */,
+				F15EA43723BB75FF001173F5 /* CategoryCell.swift */,
 			);
 			path = CustomViewDesigns;
 			sourceTree = "<group>";
@@ -227,6 +242,7 @@
 		F1F1DE36239698D50035BB68 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F15EA43D23BB7628001173F5 /* XIBs */,
 				F170798023B67DEB0006496B /* Model */,
 				F1C31AB923B75CF500EB0B83 /* CustomViewDesigns */,
 				F1C31AB423B7364500EB0B83 /* Utils */,
@@ -319,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F1DE17239677DB0035BB68 /* LaunchScreen.storyboard in Resources */,
+				F15EA43B23BB75FF001173F5 /* CategoryCell.xib in Resources */,
 				F1F1DE14239677DB0035BB68 /* Assets.xcassets in Resources */,
 				F170797D23B666680006496B /* GoogleService-Info.plist in Resources */,
 				F1F1DE12239677DA0035BB68 /* Main.storyboard in Resources */,
@@ -334,6 +351,7 @@
 				F1F1DE312396985B0035BB68 /* LaunchScreen.storyboard in Resources */,
 				F170797F23B6694B0006496B /* GoogleService-Info.plist in Resources */,
 				F1F1DE2C2396985A0035BB68 /* Main.storyboard in Resources */,
+				F15EA43C23BB75FF001173F5 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +494,7 @@
 				F1F1DE0D239677DA0035BB68 /* SceneDelegate.swift in Sources */,
 				F170798723B67EC50006496B /* RegisterVC.swift in Sources */,
 				F15EA43523BB736F001173F5 /* Category.swift in Sources */,
+				F15EA43923BB75FF001173F5 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +507,7 @@
 				F1F1DE292396985A0035BB68 /* ViewController.swift in Sources */,
 				F1F1DE252396985A0035BB68 /* AppDelegate.swift in Sources */,
 				F1F1DE272396985A0035BB68 /* SceneDelegate.swift in Sources */,
+				F15EA43A23BB75FF001173F5 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
