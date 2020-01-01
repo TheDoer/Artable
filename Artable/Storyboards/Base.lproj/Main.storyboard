@@ -14,7 +14,32 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xux-0u-Cg5">
+                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iF3-0c-Sqs">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="BKO-AY-QxI">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="xux-0u-Cg5" secondAttribute="bottom" id="Dgn-Mz-wO7"/>
+                            <constraint firstItem="BKO-AY-QxI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G3g-q4-wHj"/>
+                            <constraint firstItem="BKO-AY-QxI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LkH-KC-mHJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xux-0u-Cg5" secondAttribute="trailing" constant="20" id="T1y-vu-nDV"/>
+                            <constraint firstItem="xux-0u-Cg5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hos-AG-K4j"/>
+                            <constraint firstItem="xux-0u-Cg5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xNM-xs-ldM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="jdk-7N-t9v">
@@ -25,6 +50,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="BKO-AY-QxI" id="jvM-KE-QzB"/>
+                        <outlet property="collectionView" destination="xux-0u-Cg5" id="Tm9-zO-Vln"/>
                         <outlet property="loginOutBtn" destination="SyN-oh-F3A" id="Rbx-gZ-l6D"/>
                     </connections>
                 </viewController>
