@@ -21,6 +21,7 @@
 		F170798723B67EC50006496B /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F170798623B67EC50006496B /* RegisterVC.swift */; };
 		F188E21823BB41F000726CCF /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188E21723BB41F000726CCF /* Firebase+Utils.swift */; };
 		F188E21923BB430400726CCF /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F188E21723BB41F000726CCF /* Firebase+Utils.swift */; };
+		F1B0933B23C607E7006C9C4F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F1DE0E239677DA0035BB68 /* HomeVC.swift */; };
 		F1B7889023B9635B0096D503 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7888E23B9635B0096D503 /* ForgotPasswordVC.swift */; };
 		F1B7889123B9635B0096D503 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1B7888F23B9635B0096D503 /* ForgotPasswordVC.xib */; };
 		F1C31AB623B7365D00EB0B83 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C31AB523B7365D00EB0B83 /* Extension.swift */; };
@@ -503,6 +504,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F188E21923BB430400726CCF /* Firebase+Utils.swift in Sources */,
+				F1B0933B23C607E7006C9C4F /* HomeVC.swift in Sources */,
 				F15EA43623BB7470001173F5 /* Category.swift in Sources */,
 				F1F1DE292396985A0035BB68 /* ViewController.swift in Sources */,
 				F1F1DE252396985A0035BB68 /* AppDelegate.swift in Sources */,

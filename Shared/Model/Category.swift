@@ -13,7 +13,7 @@ struct Category {
     var name: String
     var id: String
     var imgUrl: String
-    var isActiva:Bool = true
+    var isActive:Bool = true
     var timeStamp: Timestamp
     
     

@@ -13,7 +13,7 @@ class HomeVC: UIViewController {
     
     
     
-    let backgroundImageView = UIImageView()
+    //let backgroundImageView = UIImageView()
     
     @IBOutlet weak var loginOutBtn: UIBarButtonItem!
     
@@ -31,19 +31,19 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let category = Category.init(name: "Safari", id: "hameno", imgUrl: "https://images.unsplash.com/photo-1521651201144-634f700b36ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60", isActiva: true, timeStamp: Timestamp())
+        let category = Category.init(name: "Safari", id: "tryingthithing", imgUrl: "https://images.unsplash.com/photo-1521651201144-634f700b36ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60", isActive: true, timeStamp: Timestamp())
         catergories.append(category)
         
-         setBackground()
+         //setBackground()
         // Do any additional setup after loading the view.
         
         //setting up delegates
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        collectionView?.delegate = self
+        collectionView?.dataSource = self
         
         //For the app to know which view to display, we register the  nibs/xibs below
         //Now it knows which type of collection view it it supposed to display
-        collectionView.register(UINib(nibName: Identifiers.CategoryCell, bundle: nil), forCellWithReuseIdentifier: Identifiers.CategoryCell)
+        collectionView?.register(UINib(nibName: Identifiers.CategoryCell, bundle: nil), forCellWithReuseIdentifier: Identifiers.CategoryCell)
         
     
         
@@ -63,18 +63,18 @@ class HomeVC: UIViewController {
         
     }
     // Setting up background image pragmatically 
-    func setBackground(){
-        view.addSubview(backgroundImageView)
-        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = false
-        backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = false
-        backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = false
-        backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = false
-        backgroundImageView.image = UIImage(named: "bg_cat3")
-        backgroundImageView.contentMode = .scaleAspectFill
-        view.sendSubviewToBack(backgroundImageView)
-        
-    }
+//    func setBackground(){
+//        view.addSubview(backgroundImageView)
+//        backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+//        backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = false
+//        backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = false
+//        backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = false
+//        backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = false
+//        backgroundImageView.image = UIImage(named: "bg_cat3")
+//        backgroundImageView.contentMode = .scaleAspectFill
+//        view.sendSubviewToBack(backgroundImageView)
+//
+//    }
     
     
     
